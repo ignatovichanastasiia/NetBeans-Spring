@@ -4,6 +4,8 @@
  */
 package ru.ignatovichanastasiia.netb08.domain;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -26,5 +28,15 @@ public class Mercury implements Planet{
     
     public void setSpeed(double speed) {
         this.speed = speed;
+    }
+    
+        @PostConstruct
+    public void init(){
+        System.out.println("Mercury init method");
+    }
+    
+    @PreDestroy    
+    public void destroy(){
+        System.out.println("Mercury destroy method");
     }
 }

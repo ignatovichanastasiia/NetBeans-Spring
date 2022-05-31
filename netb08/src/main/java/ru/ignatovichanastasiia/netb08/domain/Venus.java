@@ -4,6 +4,8 @@
  */
 package ru.ignatovichanastasiia.netb08.domain;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -17,7 +19,7 @@ import org.springframework.stereotype.Component;
 public class Venus implements Planet{
     @Value("6.52")
     private double speed;
-
+    
     public Venus() {
     }
 
@@ -28,6 +30,16 @@ public class Venus implements Planet{
     
     public void setSpeed(double speed) {
         this.speed = speed;
+    }
+    
+    @PostConstruct
+    public void init(){
+        System.out.println("Venus init method");
+    }
+    
+    @PreDestroy    
+    public void destroy(){
+        System.out.println("Venus destroy method");
     }
     
 }

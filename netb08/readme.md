@@ -1,5 +1,5 @@
 NetBeans project(08). Simple spring program with xml-file and annotations.
-Component, Autowired, Qualifier, Value, Scope
+Component, Autowired, Qualifier, Value, Scope, PostConstruct, PreDestroy.
 Бины, прописанные в  xml - превалируют. Если не убрать прописанные бины в xml, то @Component+@Scope("prototype") не работают. 
 
 Папка для сканирования (component-scan) указывается в xml от папки Java и далее(не включая папку Java). 
