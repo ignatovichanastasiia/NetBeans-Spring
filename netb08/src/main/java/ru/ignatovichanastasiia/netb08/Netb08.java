@@ -8,6 +8,7 @@ package ru.ignatovichanastasiia.netb08;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ru.ignatovichanastasiia.netb08.domain.Cat;
 import ru.ignatovichanastasiia.netb08.domain.FirstSystem;
+import ru.ignatovichanastasiia.netb08.domain.Jupiter;
 import ru.ignatovichanastasiia.netb08.domain.Planet;
 import ru.ignatovichanastasiia.netb08.domain.SecondSystem;
 import ru.ignatovichanastasiia.netb08.domain.ThirdSystem;
@@ -36,6 +37,12 @@ public class Netb08 {
             System.out.println(system2.toString());
             ThirdSystem system3 = context.getBean(ThirdSystem.class, "system3");
             System.out.println(system3.toString());
+            Planet pl4 = context.getBean("jupiter", Jupiter.class);
+            Planet pl5 = context.getBean("jupiter", Jupiter.class);
+            System.out.println("pl4==pl5?  "+ (pl4==pl5));
+            System.out.println(pl4.toString());
+            System.out.println(pl5.toString());
+            
             
             
         }

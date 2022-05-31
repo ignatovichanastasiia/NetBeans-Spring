@@ -8,9 +8,10 @@
                             http://www.springframework.org/schema/context
                             http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-    <context:component-scan base-package="domain"/>
+    <context:component-scan base-package="ru/ignatovichanastasiia/netb08/domain"/>
+    
 
-    <bean class = "ru.ignatovichanastasiia.netb08.domain.Cat" id = "cat">
+    <!--    <bean class = "ru.ignatovichanastasiia.netb08.domain.Cat" id = "cat">
     </bean>
     
     <bean class = "ru.ignatovichanastasiia.netb08.domain.Bow" id = "bow">
@@ -33,5 +34,6 @@
     
     <bean class = "ru.ignatovichanastasiia.netb08.domain.ThirdSystem" id = "system3">
     </bean>
+        -->
     
 </beans>
