@@ -12,6 +12,26 @@
 
     <bean class = "ru.ignatovichanastasiia.netb08.domain.Cat" id = "cat">
     </bean>
+    
+    <bean class = "ru.ignatovichanastasiia.netb08.domain.Bow" id = "bow">
+    </bean>
       
+    <bean class = "ru.ignatovichanastasiia.netb08.domain.Jupiter" id = "jupiter">
+    </bean> 
+        
+    <bean class = "ru.ignatovichanastasiia.netb08.domain.Venus" id = "venus">
+    </bean>
+    
+    <bean class = "ru.ignatovichanastasiia.netb08.domain.Mercury" id = "mercury">
+    </bean>
+    
+    <bean class = "ru.ignatovichanastasiia.netb08.domain.FirstSystem" id = "system1">
+    </bean>
+    
+    <bean class = "ru.ignatovichanastasiia.netb08.domain.SecondSystem" id = "system2">
+    </bean>
+    
+    <bean class = "ru.ignatovichanastasiia.netb08.domain.ThirdSystem" id = "system3">
+    </bean>
     
 </beans>

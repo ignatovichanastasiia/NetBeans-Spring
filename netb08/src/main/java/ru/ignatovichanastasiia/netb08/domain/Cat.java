@@ -4,6 +4,7 @@
  */
 package ru.ignatovichanastasiia.netb08.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,9 +13,19 @@ import org.springframework.stereotype.Component;
  */
 @Component("cat")
 public class Cat {
+    private Bow bow;
 
     public Cat() {
         System.out.println("Cat is created");
+    }
+
+    public Bow getBow() {
+        return bow;
+    }
+
+    @Autowired
+    public void setBow(Bow bow) {
+        this.bow = bow;
     }
     
     public void say(){
