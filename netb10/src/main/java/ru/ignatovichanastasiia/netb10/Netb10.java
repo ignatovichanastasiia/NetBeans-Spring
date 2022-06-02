@@ -18,6 +18,8 @@ public class Netb10 {
         Cat cat = context.getBean("beanCat", Cat.class);
         System.out.println(cat.getName()+" say: ");
         cat.say();
+        Plate plate = context.getBean("beanPlate", Plate.class);
+        cat.drinkMilk(plate);
         
         context.close();
     }

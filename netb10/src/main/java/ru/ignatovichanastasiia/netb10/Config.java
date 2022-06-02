@@ -23,4 +23,16 @@ public class Config {
         return cat;
     }
     
+    @Bean
+    public Milk beanMilk(){
+        return new Milk();
+    }
+    
+    @Bean
+    public Plate beanPlate(){
+        Plate plate = new Plate();
+        plate.setMilk(beanMilk());
+        return plate;
+    }
+    
 }

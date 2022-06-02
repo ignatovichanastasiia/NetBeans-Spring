@@ -26,4 +26,10 @@ public class Cat {
         System.out.println("Myau!");
     }
     
+    public void drinkMilk(Plate plate){
+        if(plate.getMilk()!=null){
+            System.out.println("Cat "+ name +" drinking milk.");
+        }
+    }
+    
 }
